@@ -24,6 +24,7 @@ export default function Project(props) {
           Edit
         </Button>
         <Button onClick={(e) => {
+          e.preventDefault()
           e.stopPropagation()
           onDelete(id)
         }} color="danger">

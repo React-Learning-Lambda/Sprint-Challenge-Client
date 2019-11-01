@@ -16,7 +16,7 @@ export default () => {
     const deleteproject = id => {
         axios.delete(`https://emkay-actions.herokuapp.com/api/projects/${id}`)
         .then( ({ data }) => {
-            const remainingProjects = projects.filter(project => project.id !== data.id)
+            const remainingProjects = projects.filter(project => project.id !== data.data.id)
             setProjects(remainingProjects)
         })
     }
