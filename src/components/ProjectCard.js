@@ -16,7 +16,7 @@ export default function Project(props) {
       <div>
         <Button
           onClick={(e) => {
-            
+            e.stopPropagation()
           }
           }
           color="dark"
